@@ -59,6 +59,11 @@ Option 2 (Windows only):
 Frets is licenced under MIT License
 
 ---
+**Author:**
+
+Frets was created by [Andrew Mendes](https://github.com/andrew-mendes) as a personal project.
+
+---
 **Changelog:**
 
 - Aug 1, 2023: Created
