@@ -69,3 +69,4 @@ Frets is licenced under MIT License
     - Added a quit confirmation window
     - Added an "about" hyperlink to this page
     - Fixed a few bugs
+- Sep 3, 2023: Added Windows installer
