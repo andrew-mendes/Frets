@@ -2,6 +2,7 @@ import os
 import tkinter as tk
 from tkinter import filedialog
 from fpdf import FPDF
+from path import resource_path
 
 def export_pdf(frets_dict):
     pdf = FPDF()
@@ -10,7 +11,7 @@ def export_pdf(frets_dict):
     # Add icon and title
     icon_width = 30
     x_left = (pdf.w - icon_width) / 2
-    pdf.image('frets_logo.png', y=8, w=icon_width, x=x_left)
+    pdf.image(resource_path('frets_logo.png'), y=8, w=icon_width, x=x_left)
     pdf.set_font("Times", style="B", size=24)
     pdf.cell(0, 25, txt="Sizes Table", ln=2, align="C")
 
