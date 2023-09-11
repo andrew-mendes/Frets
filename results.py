@@ -5,9 +5,7 @@ class ResultsWindow(ctk.CTkToplevel):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         
-        self.geometry("260x400")
-        self.maxsize(260, 400)
-        self.resizable(0,0)
+        self.resizable(1,1)
         self.grid_columnconfigure(0, weight=1)
         self.title("Results")
 

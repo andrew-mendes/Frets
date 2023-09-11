@@ -197,6 +197,17 @@ class App(ctk.CTk):
                     index=item[0],
                     values=(item[0], item[1]['mm'], item[1]['in']))
 
+            self.results_window.after(200, lambda: adjust_geometry)
+            def adjust_geometry():   
+                # Calculate the desired width and height based on content
+                # self.results_window.update_idletasks()
+                adjusted_width = self.winfo_reqwidth()
+                adjusted_height = self.winfo_reqheight()
+
+                # Set the window size based on content, but within the limits
+                self.results_window.geometry(f"{adjusted_width}x{adjusted_height}")
+                self.results_window.update()
+
         # Calculate Button
         calculate_button = ctk.CTkButton(
             self,

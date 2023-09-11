@@ -47,11 +47,11 @@ Option 1:
 - Install the requirements
 - From the programs' path run `python frets.py`
 
-Option 2 (Windows only):
+Option 2 (Windows only): *Not including Sep 11, 2023 update yet*
 
 - Unzip the installer and run _Frets_Installer.exe_
 - Follow the Wizard :mage_man:
-- Run the program in admin mode to be able to export PDFs
+- Run the program in admin mode to be able to export PDFs.
 
 ---
 **License:**
@@ -75,3 +75,4 @@ Frets was created by [Andrew Mendes](https://github.com/andrew-mendes) as a pers
     - Added an "about" hyperlink to this page
     - Fixed a few bugs
 - Sep 3, 2023: Added Windows installer
+- Sep 11, 2023: Fixed a bug where the results window would crop content in some screens that had scaling enabled and which also prevented exporting to PDF (Not applied to the exe installer yet)
